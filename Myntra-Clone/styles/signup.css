@@ -1,0 +1,97 @@
+body{
+    background-color: #fdefea;
+}
+
+.navbar{
+    margin-top: 0px;
+}
+
+.welcome{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-left: 24px; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 24px;
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    
+    
+}
+
+.login-card{
+    border-radius: 10px;
+    height: 500px;
+    background-color: white;
+    padding: 5px;
+}
+
+input{
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+p{
+    margin-left: 24px;
+    line-height: 18px;
+    font-size: 12px;
+    /* margin-top: 20px; */
+    color: grey;
+}
+
+#enter-no{
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 16px;
+    padding-left: 5px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+#num, #num2{
+    height: 95%;
+    width: 85%;
+}
+
+#name, #email, #pass{
+    border: 1px solid grey;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 16px;
+    padding-left: 5px;
+    width: 85%;
+    margin-top: 10px;
+
+}
+
+.continue{
+    background-color: #ff3f6c;
+    color: white;
+    height: 40px;
+    width: 340px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+

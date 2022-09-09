@@ -1,0 +1,134 @@
+body{
+    background-color: #fdefea;
+}
+
+.navbar{
+    background-color: white;
+    /* margin-top: -60px; */
+}
+
+.login{
+    width: 400px;
+    height: 510px;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+
+.login-banner > img{
+    margin-top: 20px;
+    height: 140px;
+    width: 400px;
+}
+
+.login-card{
+    height: 400px;
+    background-color: white;
+    padding: 5px;
+}
+
+.welcome{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.small-or{
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+}
+
+#enter-no{
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 16px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input{
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input + p{
+    margin-left: 24px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+#num{
+    height: 95%;
+    width: 85%;
+}
+
+#pass{
+    border: 1px solid grey;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 16px;
+    padding-left: 5px;
+    width: 85%;
+    margin-top: 10px;
+
+}
+
+.terms , .privacy{
+    color: #ff3f6c;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.continue{
+    background-color: #ff3f6c;
+    color: white;
+    height: 40px;
+    width: 340px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+#trouble{
+    margin-left: 24px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#newacc{
+    border: 1px solid #ff3f6c;
+    width: 340px;
+    height: 40px;
+    font-weight: bold;
+    margin-left: 24px;
+    margin-top: 10px;
+    text-align: center;
+    color: #ff3f6c;
+    background-color: white;
+    cursor: pointer;
+}
+

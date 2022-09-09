@@ -1,0 +1,41 @@
+.addedtocart{
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+  margin-top: 80px;
+}
+
+#proceed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 240px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fd295a;
+    cursor: pointer;
+}
+
+.showtotal{
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: max-content;
+    padding: 10px;
+    color: #fd295a;
+    border: 1px solid #fd295a;
+    border-radius: 10px;
+}

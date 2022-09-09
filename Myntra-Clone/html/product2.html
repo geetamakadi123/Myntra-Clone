@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Men Shopping Online - Buy from Latest Collections of Shirts and Accesories
+    </title>
+    <link
+      rel="icon"
+      href="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/product.css" />
+
+    <!-- fontawesome-link -->
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google-icon-link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png"
+              alt="logo"
+              id="myntra-logo"
+          /></a>
+        </div>
+        <div class="category">
+          <ul>
+            <li class="men"><a href="../html/mens.html">men</a></li>
+            <li class="women"><a href="../html/women.html">women</a></li>
+            <li class="kids"><a href="../html/product2.html">kids</a></li>
+            <li class="hnl"><a href="">home & living</a></li>
+            <li class="beauty"><a href="">beauty</a></li>
+            <li class="studio">
+              <a href="">studio <sup>new</sup></a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for products, brands and more"
+          />
+        </div>
+        <div class="profile-wishlist-bag">
+          <div>
+            <span class="material-symbols-outlined"> person </span>
+            <div>
+              <a href="../html/login.html" class="profile-login">Login</a>
+            </div>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> favorite </span>
+            <div>Wishlist</div>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> shopping_bag </span>
+            <div><a href="../html/bag.html"> Bag </a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="path">
+        Home / Shoes / <strong>Sports Accesories For Unisex</strong>
+      </div>
+      <div class="path1">
+        <strong>Shirts For Men & Women</strong> - 4000 items
+      </div>
+      <div class="right">
+        <div class="sort">
+          <select name="type" id="type" onchange="handleSort()">
+            <option selected>Sort By: Recommended</option>
+            <option value="1">Price : High to Low</option>
+            <option value="2">Price : Low to High</option>
+            <option value="3">Best Discount</option>
+            <option value="4">Popularity</option>
+          </select>
+        </div>
+        <!-- <div id="products-right"></div> -->
+      </div>
+      <div class="big-flex">
+        <div class="filters">
+          <div class="leftheading">FILTERS</div>
+          <div class="filter-content">
+            <div class="filter-categories">
+              <p>Brands</p>
+
+              <input
+                type="checkbox"
+                id="adidas"
+                value="adidas"
+                onclick="filter('ADIDAS')"
+              />
+              <label for="adidas">Adidas</label><br />
+              <input
+                type="checkbox"
+                id="puma"
+                value="puma"
+                onclick="filter('Puma')"
+              />
+              <label for="puma">Puma</label><br />
+              <input
+                type="checkbox"
+                id="HRX"
+                value="HRX"
+                onclick="filter('HRX')"
+              />
+              <label for="HRX">HRX</label><br />
+              <input
+                type="checkbox"
+                id="wrogn"
+                value="wrogn"
+                onclick="filter('WROGN')"
+              />
+              <label for="wrogn">Wrogn</label><br />
+              <input
+                type="checkbox"
+                id="levis"
+                value="levis"
+                onclick="filter('Levis')"
+              />
+              <label for="levis">Levis</label><br />
+              <input
+                type="checkbox"
+                id="tommy"
+                value="tommy"
+                onclick="filter('Tommy Hilfiger')"
+              />
+              <label for="tommy">Tommy Hilfiger</label><br />
+            </div>
+
+            <div class="filter-categories">
+              <p>Price</p>
+              <input
+                type="checkbox"
+                id="500"
+                value="500"
+                onclick="priceFilter(500, 0)"
+              />
+              <label for="500">Below 500</label><br />
+
+              <input
+                type="checkbox"
+                id="1000"
+                value="1000"
+                onclick="priceFilter(1000, 500)"
+              />
+              <label for="1000">Rs.500 to Rs.1000</label><br />
+              <input
+                type="checkbox"
+                id="1500"
+                value="1500"
+                onclick="priceFilter(1500, 1000)"
+              />
+              <label for="1500">Rs.1000 to Rs.1500</label><br />
+              <input
+                type="checkbox"
+                id="2000"
+                value="2000"
+                onclick="priceFilter(2000, 1500)"
+              />
+              <label for="2000">Rs.1500 to Rs.2000</label><br />
+              <input
+                type="checkbox"
+                id="2000+"
+                value="2000+"
+                onclick="priceFilter(10000, 2000)"
+              />
+              <label for="2000+">Above Rs.2000</label><br />
+            </div>
+          </div>
+        </div>
+
+        <div class="products"> </div>
+      </div>
+      <div class="foot">
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="columns">
+                <h4>online shopping</h4>
+                <ul>
+                  <li><a href="#">men</a></li>
+                  <li><a href="#">women</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Home & living</a></li>
+                  <li><a href="#">Beauty</a></li>
+                  <li><a href="#">gift cards</a></li>
+                  <li>
+                    <a href="#">myntra insider <span>New</span> </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="columns">
+                <h4>useful links</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">returns</a></li>
+                  <li><a href="#">track order</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Terms Of Use</a></li>
+                  <li><a href="#">Whitehat</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">site map</a></li>
+                  <li><a href="#">Corporate information</a></li>
+                  <li><a href="#">shipping</a></li>
+                  <li><a href="#">Cancellation</a></li>
+                </ul>
+              </div>
+
+              <div class="columns">
+                <h4>experience myntra app on mobile</h4>
+                <div>
+                  <a href=""
+                    ><img
+                      src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                      alt=""
+                  /></a>
+                </div>
+                <h4>keep in touch</h4>
+                <div class="facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+
+              <div class="columns">
+                <div class="original">
+                  <img
+                    src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                    alt=""
+                  />
+                  <div>
+                    <p>100% ORIGINAL</p>
+
+                    <span>guarantee for all products at myntra.com</span>
+                  </div>
+                </div>
+
+                <div class="original">
+                  <img
+                    src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
+                    alt=""
+                  />
+                  <div>
+                    <p>Return within 30days</p>
+                    <span>of receiving your order</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="../script/sports.js"></script>

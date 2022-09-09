@@ -1,0 +1,116 @@
+.big-flex {
+  display: flex;
+  margin: auto;
+  /* margin-top: 80px; */
+  justify-content: space-around;
+}
+
+.filters {
+  width: 15%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.products {
+  padding: 24px;
+  /* margin-left: auto; */
+  width: 78%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.priceflex {
+  margin-top: -15px;
+  display: flex;
+  gap: 20px;
+}
+
+.priceflex > p:first-child {
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.priceflex > p:nth-child(2) {
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.priceflex > p:nth-child(3) {
+  color: red;
+}
+
+.product-card {
+  margin-bottom: 20px;
+}
+
+.product-card > img {
+  width: 210px;
+  height: 280px;
+}
+
+.itemname {
+  margin-top: -10px;
+  color: grey;
+}
+
+.leftheading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-categories {
+  width: 100%;
+}
+.filter-categories p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right {
+  margin: auto;
+  margin-right: 10px;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.sort select {
+  height: 40px;
+  width: 250px;
+}
+
+option {
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid grey;
+}
+
+.path{
+  margin-top: 80px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+.path1{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+strong{
+    color: black;
+}
+
+.btn{
+  width: 50%;
+  padding: 7px;
+  background-color: #fd295a;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
